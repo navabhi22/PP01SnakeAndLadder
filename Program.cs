@@ -10,7 +10,7 @@ namespace SnakeAndLadder
             Console.WriteLine(" Single Player Game, Player Start at zero ");
             int Start = 0;
             int End = 100;
-            
+            int ROll = DiceRoll.RollTheDice();
         }
     }
 }

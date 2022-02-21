@@ -13,6 +13,7 @@ namespace SnakeAndLadder
             int Snake = 0;
             int Ladder = 2;
             int roll = DiceRoll.RollTheDice();
+            Console.WriteLine("dice roll " + roll);
 
             int option = CheckOption.Option();
             if (option == Snake)
@@ -24,6 +25,7 @@ namespace SnakeAndLadder
             {
                 Position = Position + roll;
                 Console.WriteLine("Ladder");
+                Position = Play.GamePlay(Position);
             }
             else
             {

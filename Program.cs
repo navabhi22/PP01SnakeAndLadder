@@ -11,11 +11,9 @@ namespace SnakeAndLadder
             int Start = 0;
             int End = 100;
             int ROll = DiceRoll.RollTheDice();
-            Console.WriteLine("Checking for options Ladder, Snake or NoPlat");
-            int Snake = 0;
-            int NoPlay = 1;
-            int Ladder = 2;
-            int option = CheckOption.Option();
+            Console.WriteLine("Checking for options Ladder, Snake or NoPlay");
+            int Position = Play.GamePlay(Start);
+            Console.WriteLine(Position);
         }
     }
 }

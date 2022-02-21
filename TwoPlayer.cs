@@ -17,10 +17,20 @@ namespace SnakeAndLadder
             {                
                 Player1Position = SnakeAndLadder.TwoPlayerGame.GamePlay(Player1Position);
                 Console.WriteLine("Player 1 position is " + Player1Position);
-                
+                if (Player1Position >= 100)
+                    break;
                 Player2Position = SnakeAndLadder.TwoPlayerGame.GamePlay(Player1Position);
                 Console.WriteLine("Player 2 position is " + Player2Position);
-                
+                if (Player2Position >= 100)
+                    break;
+            }
+            if (Player1Position > Player2Position)
+            {
+                Console.WriteLine("Player 1 has won");
+            }
+            else
+            {
+                Console.WriteLine("Player 2 has won");
             }
         }
     }
